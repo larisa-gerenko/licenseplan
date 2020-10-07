@@ -1,14 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="licenseWindow">
+      <div class="container">
+        <div class="plans">
+          <div class="plans__point" data-price="13" data-number="1">
+            <div>
+              <input type="radio" id="planone" name="license" />
+              <label for="planone" class="license">Licenseplan #1</label><br />
+            </div>
+            <div class="price">$13 per license</div>
+          </div>
 
-</body>
+          <div class="plans__point" data-price="22" data-number="2">
+            <div>
+              <input type="radio" id="plantwo" name="license" />
+              <label for="plantwo" class="license">Licenseplan #2</label><br />
+            </div>
+            <div class="price">$22 per license</div>
+          </div>
+
+          <div class="plans__point active" data-price="34" data-number="3">
+            <div>
+              <input type="radio" id="planthree" name="license" checked />
+              <label for="planthree" class="license">Licenseplan #3</label
+              ><br />
+            </div>
+            <div class="price">$34 per license</div>
+          </div>
+        </div>
+        <hr align="center" width="100%" size="1" color="#e3e3e3" />
+
+        <div class="number">
+          Number of licences:
+          <select name="select" class="count">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="10" selected>10</option>
+          </select>
+        </div>
+
+        <hr align="center" width="100%" size="1" color="#e3e3e3" />
+
+        <div class="total">
+          <div>
+            <span style="text-transform: uppercase;">Total:</span
+            ><span style="color: #5a9bb6;"
+              >$ <span class="sum">340</span> <sup>us</sup></span
+            >
+          </div>
+          <button href="#">Buy now</button>
+          <div class="selected" style="color: #6aa6bd;">
+            Selected plan: <span class="selectedPlan">#3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
